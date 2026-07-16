@@ -1,0 +1,54 @@
+.mainHeading {
+    text-align: left;
+    color: #0A2540;
+}
+
+body {
+    background-color: #f7f9fc;
+    font-family: 'Inter' sans-serif;
+}
+
+.mynav {
+    background-color: #C9EBFF;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+    margin: 40px auto;
+}
+
+.textbox {
+    padding: 20px;
+    margin: 40px auto;
+}
+
+.textbox h1 {
+    font-size: 50px;
+    color: #0A2540;
+    font-weight:800;
+}
+
+.textbox p {
+    text-align: left;
+    color: #0A2540;
+    font-family: 'Inter' sans-serif;
+}
+
+.pfpImage img {
+    border-radius:28px;   
+}
+
+footer {    
+    background:#111827;
+    color:white;
+    padding: 10px;
+    text-align:center;
+}
+
+footer a.active {
+    color: white;
+    font-weight: bold;
+}
