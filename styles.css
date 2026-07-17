@@ -1,19 +1,24 @@
-.mainHeading {
-    text-align: left;
-    color: #0A2540;
-}
-
 body {
-    background-color: #f7f9fc;
+    background-color: #111827;
     font-family: 'Inter' sans-serif;
 }
 
 .mynav {
-    background-color: #C9EBFF;
+    background-color: #222f4d;
 }
 
-.container {
+.innerContainer {
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+    margin: 40px auto;
+}
+
+.outerContainer {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     gap: 30px;
     padding: 20px;
@@ -23,26 +28,37 @@ body {
 .textbox {
     padding: 20px;
     margin: 40px auto;
+    font-size: 20px;
+    text-align: left;
+    color: white;
+    font-family: 'Inter' sans-serif;
 }
 
 .textbox h1 {
     font-size: 50px;
-    color: #0A2540;
+    color: white;
     font-weight:800;
 }
 
-.textbox p {
-    text-align: left;
-    color: #0A2540;
-    font-family: 'Inter' sans-serif;
+.outerContainer h2 {
+    color: white;
+}
+
+.textbox a {
+    font-size: 16px;
 }
 
 .pfpImage img {
+    max-width: 100%;
+    width: 800px;
+    height: auto;
+    display: block;
     border-radius:28px;   
 }
 
 footer {    
-    background:#111827;
+    background:#222f4d;
+    font-size: 15px;
     color:white;
     padding: 10px;
     text-align:center;
