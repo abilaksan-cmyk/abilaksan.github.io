@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Welcome Page</title>
+
+        <!--Bootstrap css stylesheet-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
+        rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+        <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+        <!--my custom css stylesheet-->
+        <link rel="Stylesheet" href="styles.css">
+
+        <!--Internal stylesheet for pdf-->
+        <style>
+            #pdfHolder {
+                display: flex;
+                gap: 10px;
+                align-items: center;
+                text-align: left;
+                width: 100%;
+                padding: 20px;
+                margin-bottom: 20px;
+            }
+
+            #pdfHolder h1 {
+                font-size: 50px;
+                color: white;
+                font-weight: 500;
+            }
+
+            #resumeFrame {
+                width: 100%;
+                height: 900px;
+            }
+        </style>
+    </head>
+    <body>
+
+        <!--Navigation bar using Bootstrap-->
+        <nav class="navbar navbar-expand-lg d-flex mynav" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Abilaksan's Portfolio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="nav nav-underline">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="resume.html">Resume</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="projects.html">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>   
+            </div>
+        </nav>
+
+        <!--Main body resume showcase-->
+        <div>
+            <div id="pdfHolder">
+                <h1> My Resume</h1>
+
+                <!--Embedded PDF and Download button using Bootstrap-->
+                <a class="btn btn-primary ms-auto" href="Abilaksan_Logathasan_GeneralResume.pdf" download><i class="bi bi-download"></i> Download</a>
+            </div>
+            <iframe id="resumeFrame" src="Abilaksan_Logathasan_GeneralResume.pdf#toolbar=0"></iframe>
+        </div>
+        
+        
+
+
+        <!--Footer using Bootstrap-->
+        <footer> 
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3"> 
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li> 
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li> 
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="resume.html">Resume</a>
+                </li> 
+                <li class="nav-item">
+                    <a class="nav-link" href="projects.html">Projects</a>
+                </li> 
+                <li class="nav-item">
+                    <a class="nav-link" href="blog.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li> 
+            </ul> 
+            <p>&copy 2026 by Abilaksan. All rights reserved.</p> 
+        </footer>
+
+        <!--Bootstrap javascript-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    </body>
+</html>
