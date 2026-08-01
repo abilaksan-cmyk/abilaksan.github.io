@@ -9,19 +9,24 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
         rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
+        <!--Bootstrap icons css stylesheet-->
+        <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"> 
+        
         <!--my custom css stylesheet-->
         <link rel="Stylesheet" href="styles.css">
     </head>
     <body>
 
         <!--Navigation bar using Bootstrap-->
-        <nav class="navbar navbar-expand-lg d-flex mynav" data-bs-theme="dark">
+        <nav class="navbar navbar-expand-lg d-flex" data-bs-theme="dark" id="myNav">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">Abilaksan's Portfolio</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                <button type="button" class="btn btn-dark" id="theme-toggle">Light Mode</button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul class="nav nav-underline">
                         <li class="nav-item">
@@ -47,6 +52,7 @@
             </div>
         </nav>
 
+        
         <!--Main body-->
         <div class="outerContainer">
 
@@ -125,7 +131,6 @@
                 </div>
         </div>
 
-       
 
         <!--Footer using Bootstrap-->
         <footer> 
@@ -151,6 +156,9 @@
             </ul> 
             <p>&copy 2026 by Abilaksan. All rights reserved.</p> 
         </footer>
+
+        <!--Theme switch javascript-->
+        <script src="theme.js"></script>
 
         <!--Bootstrap javascript-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 

@@ -1,10 +1,11 @@
 body {
-    background-color: #111827;
+    background-color: var(--bg); 
+    color: var(--text); 
     font-family: 'Inter' sans-serif;
 }
 
-.mynav {
-    background-color: #222f4d;
+#myNav {
+    background-color: var(--navbar);
 }
 
 .innerContainer {
@@ -30,18 +31,26 @@ body {
     margin: 40px auto;
     font-size: 20px;
     text-align: left;
-    color: white;
+    color: var(--textbox);
     font-family: 'Inter' sans-serif;
 }
 
 h1 {
     font-size: 50px;
-    color: white;
+    color: var(--h1);
     font-weight:800;
 }
 
-.outerContainer h2 {
-    color: white;
+h2 {
+    color: var(--h1);
+}
+
+.card-header, .card-title {
+    color: var(--h1);
+}
+
+p {
+    color: var(--textbox);
 }
 
 .textbox a {
@@ -57,14 +66,40 @@ h1 {
 }
 
 footer {    
-    background:#222f4d;
+    background: var(--footer);
     font-size: 15px;
-    color:white;
     padding: 10px;
     text-align:center;
 }
 
 footer a.active {
-    color: white;
+    color: var(--active);
     font-weight: bold;
 }
+
+.form-label {
+    color: var(--textbox);
+}
+
+:root { 
+    --bg: #111827;
+    --navbar: #222f4d;
+    --navColor: white;
+    --h1: white; 
+    --textbox: white;
+    --footer: #222f4d;
+    --footerText: white;
+    --active: white;  
+}
+        
+[data-theme="light"] { 
+    --bg: #EEE7D8;
+    --navbar: #DDD0B2;
+    --navColor: black;
+    --h1: black;  
+    --textbox: black; 
+    --footer: #DDD0B2;
+    --footerText: black;
+    --active: black;
+}
+        
