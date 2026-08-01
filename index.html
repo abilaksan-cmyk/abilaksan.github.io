@@ -16,41 +16,10 @@
         <!--my custom css stylesheet-->
         <link rel="Stylesheet" href="styles.css">
     </head>
-    <body>
+    <body class="page-index">
 
-        <!--Navigation bar using Bootstrap-->
-        <nav class="navbar navbar-expand-lg d-flex" data-bs-theme="dark" id="myNav">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">Abilaksan's Portfolio</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <button type="button" class="btn btn-dark" id="theme-toggle">Light Mode</button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                    <ul class="nav nav-underline">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.html">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="resume.html">Resume</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="projects.html">Projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="blog.html">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
-                        </li>
-                    </ul>
-                </div>   
-            </div>
-        </nav>
+        <!--Dynamically loaded navigation bar made with Bootstrap-->
+        <div id="header-placeholder"></div>
 
         
         <!--Main body-->
@@ -65,8 +34,8 @@
                         Technology at York University with a particular interest in system analysis. 
                         Take a look at my work and feel free to reach out if you'd like to connect. 
                     </p>
-                    <a class="btn btn-primary btn-lg" href="about.html" role="button">About Me</a>
-                    <a class="btn btn-primary btn-lg" href="resume.html" role="button">My Resume</a>
+                    <a class="btn" href="about.html" role="button">About Me</a>
+                    <a class="btn" href="resume.html" role="button">My Resume</a>
                </div>
                <div class="pfpImage">
                     <img src= "images/PFP.png" alt="Profile Pic">
@@ -132,33 +101,14 @@
         </div>
 
 
-        <!--Footer using Bootstrap-->
-        <footer> 
-            <ul class="nav justify-content-center border-bottom pb-3 mb-3"> 
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                </li> 
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
-                </li> 
-                <li class="nav-item">
-                    <a class="nav-link" href="resume.html">Resume</a>
-                </li> 
-                <li class="nav-item">
-                    <a class="nav-link" href="projects.html">Projects</a>
-                </li> 
-                <li class="nav-item">
-                    <a class="nav-link" href="blog.html">Blog</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                </li> 
-            </ul> 
-            <p>&copy 2026 by Abilaksan. All rights reserved.</p> 
-        </footer>
+        <!--Dynamically loaded footer made with Bootstrap-->
+        <div id="footer-placeholder"></div>
 
         <!--Theme switch javascript-->
         <script src="js/theme.js"></script>
+
+        <!--Dynamic header and footer javascript-->
+        <script src="js/components.js"></script>
 
         <!--Bootstrap javascript-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 

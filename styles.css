@@ -102,4 +102,32 @@ footer a.active {
     --footerText: black;
     --active: black;
 }
+
+[data-theme="dark"] .nav-link {
+    color: white;
+}
+
+[data-theme="light"] .nav-link {
+    color: black;
+}
+
+[data-theme="dark"] .btn {
+    background-color: darkgrey;
+    color: black;
+}
+
+[data-theme="light"] .btn {
+    background-color: navy;
+    color: white;
+}
+
+body.page-index [data-page="index"],
+body.page-about [data-page="about"],
+body.page-resume [data-page="resume"],
+body.page-projects [data-page="projects"],
+body.page-blog [data-page="blog"],
+body.page-contact [data-page="contact"] {
+    font-weight: 800;
+    text-decoration: underline;
+}
         
