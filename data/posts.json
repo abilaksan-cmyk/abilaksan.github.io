@@ -11,10 +11,19 @@
     ,{
         "id": 2,
         "title": "Created dynamic blog section",
-        "date": "2026-08-03T12:00:00",
+        "date": "2026-08-02T12:00:00",
         "summary": "Created a dynamic blog section that loads from a JSON file",
         "category": "DynamicBlog",
         "content": "This feature loads post content from a JSON file and dynamically displays it on the blog page. The biggest challenge I came across was formatting the cards that contain blog details using Bootstrap. Fortunately, by playing around with the sizes and positions, I was able to format the content in a decent manner. Also, I couldn't figure out why my date was a day behind until I found out that the Date object's .toLocaleDateString formats local time to UTC. However, the solution was quite simple, I just had to add a local time T12:00:00, which forces JavaScript to format UTC into my local timezone"
+    }
+
+    ,{
+        "id": 3,
+        "title": "Built contact form validation",
+        "date": "2026-08-03T12:00:00",
+        "summary": "Created a validation js to check contact form fields",
+        "category": "ContactFormValidation",
+        "content": "This feature allows users to know if they have inputted the correct values for each field. The biggest challenge I came across was not being able to identify why my error messages weren't showing up when the fields were empty. Thankfully, I discovered that value.trim() removes extra spaces and prevents a form from looking like it is filled when it is empty."
     }
 ]
 
