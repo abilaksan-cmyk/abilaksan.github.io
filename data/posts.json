@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "title": "Adding theme switch to every page",
+        "date": "2026-07-31T12:00:00",
+        "summary": "Implemented a theme switch for every page that persists user's choice using localStorage.",
+        "category": "ThemeSwitch",
+        "content": "This feature provides the ability to switch between light or dark colours when viewing the pages. The hint was very helpful to determine that localStorage keeps the last theme that was set by the user. My biggest challenge was trying to determine a good colour pallete for the light version of my page as I already started with the dark version. In the end I chose the hex opposite of my dark colours and implemented some blue for contrast."
+    }
+
+    ,{
+        "id": 2,
+        "title": "Created dynamic blog section",
+        "date": "2026-08-03T12:00:00",
+        "summary": "Created a dynamic blog section that loads from a JSON file",
+        "category": "DynamicBlog",
+        "content": "This feature loads post content from a JSON file and dynamically displays it on the blog page. The biggest challenge I came across was formatting the cards that contain blog details using Bootstrap. Fortunately, by playing around with the sizes and positions, I was able to format the content in a decent manner. Also, I couldn't figure out why my date was a day behind until I found out that the Date object's .toLocaleDateString formats local time to UTC. However, the solution was quite simple, I just had to add a local time T12:00:00, which forces JavaScript to format UTC into my local timezone"
+    }
+]
+
