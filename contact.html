@@ -72,22 +72,22 @@
             <!--Contact form using Bootstrap-->
             <h2>Let's Connect!</h2>
             <div class="form">
-            <form>
+            <form id="form">
                 <div class="mb-3">
                     <label for="name" class="form-label">Name</label>
-                    <input type="text" class="form-control" aria-describedby="emailHelp">
+                    <input type="text" id="name" class="form-control" aria-describedby="emailHelp">
                 </div>
                 <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" id="email" class="form-control" aria-describedby="emailHelp">
                 </div>
                 <div class="mb-3">
                     <label for="subject" class="form-label">Subject</label>
                     <input type="text" class="form-control" aria-describedby="emailHelp">
                 </div>
                 <div class="mb-3">
-                    <label for="Message" class="form-label">Message</label>
-                    <textarea name="Message" class="form-control"></textarea>
+                    <label for="message" class="form-label">Message</label>
+                    <textarea name="message" id="message" class="form-control"></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary">Send Message</button>
             </form>
@@ -123,6 +123,9 @@
 
         <!--Dynamic header and footer javascript-->
         <script src="js/components.js"></script>
+
+        <!--Contact form validation-->
+        <script src="js/validate.js"></script>
 
         <!--Bootstrap javascript-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 

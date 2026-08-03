@@ -130,4 +130,15 @@ body.page-contact [data-page="contact"] {
     font-weight: 800;
     text-decoration: underline;
 }
+
+.error-msg {
+    color: red;
+    font-size: 14px;
+    display: block;
+    margin-top: 5px;
+}
+
+input.error, textarea.error {
+    border: 2px solid red;
+}
         
