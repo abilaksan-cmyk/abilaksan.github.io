@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
         // TODO: Populate postElement with the post data
-        //Using Bootstrap to build blog cards
+        //Using Bootstrap to build blog cards and read more button
 
         postElement.innerHTML = `
             <div class="card h-100 bg-primary border-0 shadow-sm rounded-4">
@@ -51,7 +51,6 @@ document.addEventListener("DOMContentLoaded", function () {
             </div>
         `;
 
-        // Read More toggle using Bootstrap
         const button = postElement.querySelector(".read-more-btn");
         const content = postElement.querySelector(".full-content");
 
