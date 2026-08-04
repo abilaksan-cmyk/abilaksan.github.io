@@ -23,7 +23,16 @@
         "date": "2026-08-03T12:00:00",
         "summary": "Created a validation js to check contact form fields",
         "category": "ContactFormValidation",
-        "content": "This feature allows users to know if they have inputted the correct values for each field. The biggest challenge I came across was not being able to identify why my error messages weren't showing up when the fields were empty. Thankfully, I discovered that value.trim() removes extra spaces and prevents a form from looking like it is filled when it is empty."
+        "content": "This feature will show whether the correct values have been inputted or not for each field. The biggest challenge I came across was not being able to identify why my error messages weren't showing up when the fields were empty. Thankfully, I discovered that value.trim() removes extra spaces and prevents a form from looking like it is filled when it is empty."
+    }
+
+    ,{
+        "id": 4,
+        "title": "Added filter for project and blog pages",
+        "date": "2026-08-04T12:00:00",
+        "summary": "Added category buttons for filtering project page and blog post page",
+        "category": "Filter",
+        "content": "This feature provides category buttons that filter the specific project/blog post when clicked. The biggest challenge I had with this part was that I couldn't get the category buttons to show the specific card. Funny enough, the solution was just simply adding ids to the card column in each of their divs."
     }
 ]
 
